@@ -1,5 +1,5 @@
 name: hello-world action
-on: [push]
+on: push
 jobs:
   Say-Hello-Action:
     runs-on: ubuntu-latest
