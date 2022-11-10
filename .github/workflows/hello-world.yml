@@ -8,6 +8,4 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
-      - uses: actions/checkout@v3
-      # run – произвольная bash-команда
       - run: make say-hello
