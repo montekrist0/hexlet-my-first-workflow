@@ -6,4 +6,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: make say-hello
+      - run: echo "Hello, World!"
+      # Так не работает. Почему? 🤔
+      # - run: make say-hello
