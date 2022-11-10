@@ -1,20 +1,7 @@
 name: hello-world
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
-
+on: [push]
 jobs:
-  build:
+  Say-Hello-Action:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      
-
-      - name: say-hello
-        run: make say-hello
+      - run: make say-hello
